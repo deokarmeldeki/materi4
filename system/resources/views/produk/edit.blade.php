@@ -7,7 +7,7 @@
 			<div class="col-md-12">
 				<div class="card mt-4">
 					<div class="card-header">
-						Tambah Data Produk
+						Edit Data Produk
 						<form action="{{url('produk', $produk->id)}}" method="post">
 							@csrf
 							@method('PUT')
@@ -32,17 +32,11 @@
 					</div>
 					<div class="col-md-3">
 						<div class="form-group">
-							<label class="control-label" for="">Warna</label>
-							<input type="text" name="warna" class="form-control" value="{{$produk->warna}}">
+							<label class="control-label" for="">Stok</label>
+							<input type="text" name="stok" class="form-control" value="{{$produk->stok}}">
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="form-group">
-						<label class="control-label" for="">Stok</label>
-						<input type="text" name="stok" class="form-control" value="{{$produk->stok}}">
-					</div>
-					</div>			
+				</div>		
 					<div class="form-group">
 						<label class="control-label" for="" >Deskripsi</label>
 						<textarea name="deskripsi" class="form-control">{{$produk->deskripsi}}</textarea>
