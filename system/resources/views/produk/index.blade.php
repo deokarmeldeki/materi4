@@ -11,7 +11,7 @@
 						<a href="{{url('produk/create')}}" class="btn btn-dark float-right"><i class="fa fa-plus">  Tambah Data</i></a>
 					</div>
 					<div class="card-body">
-						<table class="table">
+						<table class="table table-bordered">
 							<thead>
 								<th>No</th>
 								<th width="150px">Aksi</th>
