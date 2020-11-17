@@ -20,15 +20,15 @@
 					<div class="row no-gutters">
 					<div class="col-md-6">
 						<div class="form-group">
-						<label class="control-label" for="">Berat</label>
-						<input type="text" name="berat" class="form-control" value="{{$produk->berat}}">
-					</div>
-					</div>
-					<div class="col-md-3">
-						<div class="form-group">
 							<label class="control-label" for="">Harga</label>
 							<input type="text" name="harga" class="form-control" value="{{$produk->harga}}">
 						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+						<label class="control-label" for="">Berat</label>
+						<input type="text" name="berat" class="form-control" value="{{$produk->berat}}">
+					</div>
 					</div>
 					<div class="col-md-3">
 						<div class="form-group">

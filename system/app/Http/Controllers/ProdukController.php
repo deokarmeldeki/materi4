@@ -1,7 +1,7 @@
 <?php 
 
-namespace App\Http\Controllers;
-use App\Produk;
+	namespace App\Http\Controllers;
+	use App\Produk;
 
 class ProdukController extends controller{
 	function index(){

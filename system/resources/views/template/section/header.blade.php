@@ -17,4 +17,22 @@
         </div>
       </div>
     </form>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a href="" class="nav-link" data-toggle="dropdown"> 
+              @if(Auth::check())
+                {{request()->user()->nama}}
+              @else
+                Silahkan Login !
+              @endif
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item"><i class="fas fa-user"></i> Profile</a>
+              <a href="#" class="dropdown-item"><i class="fas fa-cog"></i> Setting</a>
+              <a href="{{url('logout')}}" class="dropdown-item"><i class="fas fa-sign-out"></i> Logout</a>
+              <div class="dropdown-divider">
+              </div>
+            </div>
+        </li>
+    </ul>
   </nav

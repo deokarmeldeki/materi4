@@ -7,43 +7,35 @@
 			<div class="col-md-12">
 				<div class="card mt-4">
 					<div class="card-header">
-						Tambah Data Produk
-						<form action="{{url('produk')}}" method="post">
+						Tambah Data User
+						<form action="{{url('user')}}" method="post">
 							@csrf
 					</div>
 					<div class="card-body">
 					<div class="form-group">
-						<label class="control-label" for="">Nama</label>
-						<input type="text" name="nama" class="form-control">
+						<label class="control-label" for="">Username</label>
+						<input type="text" name="username" class="form-control">
 					</div>
 					<div class="row no-gutters">
-					<div class="col-md-6">
+					<div class="col-md-5">
 						<div class="form-group">
-						<label class="control-label" for="">Harga</label>
-						<input type="text" name="harga" class="form-control">
+						<label class="control-label" for="">Email</label>
+						<input type="text" name="email" class="form-control">
 					</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 ml-1">
 						<div class="form-group">
-							<label class="control-label" for="">Berat</label>
-							<input type="text" name="berat" class="form-control">
+							<label class="control-label" for="">Nama</label>
+							<input type="text" name="nama" class="form-control">
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="form-group">
-							<label class="control-label" for="">stok</label>
-							<input type="text" name="stok" class="form-control">
+							<label class="control-label" for="">Password</label>
+							<input type="password" name="password" class="form-control">
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
-					
-					</div>			
-					<div class="form-group">
-						<label class="control-label" for="">Deskripsi</label>
-						<textarea name="deskripsi" class="form-control"></textarea>
-					</div>
-					
 					<button class="btn btn-dark float-right"><i class="fa fa-save"> simpan</i></button>
 					</form>
 					</div>

@@ -7,15 +7,13 @@
 			<div class="col-md-12">
 				<div class="card mt-4">
 					<div class="card-header">
-						Detail Data Produk
+						Detail Data User
 					</div>
 					<div class="card-body">
-						<h4>{{$produk->nama}}</h4><hr>
-						<p>Rp. {{number_format($produk->harga)}} |
-							Stok : {{$produk->stok}} |
-							Berat : {{$produk->berat}} gr
+						<h4>{{"@".$user->username}}</h4><hr>
+						<p>Email : {{$user->email}} |
+							Nama : {{$user->nama}} |
 						</p>
-						{!! nl2br($produk->deskripsi) !!}
 					</div>
 				</div>
 			</div>

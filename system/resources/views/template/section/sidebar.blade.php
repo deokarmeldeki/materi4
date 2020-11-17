@@ -9,7 +9,11 @@
     <a href="index3.html" class="brand-link">
       <img src="" alt="" class=""
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Siansahan64</span>
+      @if(Auth::check())
+        {{request()->user()->nama}}
+      @else
+        Silahkan Login !
+      @endif
     </a>
 
     <!-- Sidebar -->
@@ -37,7 +41,7 @@
               </div>
             </div>
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="{{url('produk')}}" class="nav-link">
                  <i class="nav-icon fas fa-th" aria-hidden="true"></i>
                   <p>Produk</p>
                 </a>
@@ -46,6 +50,16 @@
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>Kategori</p>
+                </a>
+              </li>
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+              <div class="">
+              </div>
+            </div>
+              <li class="nav-item">
+                <a href="{{url('user')}}" class="nav-link">
+                  <i class="nav-icon fas fa-user"></i>
+                  <p>User</p>
                 </a>
               </li>
           </li>
