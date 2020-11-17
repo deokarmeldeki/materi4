@@ -8,7 +8,7 @@
 				<div class="card mt-4">
 					<div class="card-header">
 						Tambah Data User
-						<form action="{{url('user')}}" method="post">
+						<form action="{{url('admin/user')}}" method="post">
 							@csrf
 					</div>
 					<div class="card-body">

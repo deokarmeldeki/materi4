@@ -28,12 +28,12 @@ Route::get('login',[AuthController:: class,'showLogin']);
 Route::get('create',[HomeController:: class,'showCreate']);
 Route::get('template.base',[HomeController:: class,'showTemplate']);
 
-Route::prefix('admin')->group(function(){
+Route::prefix('admin')->middleware('auth')->group(function(){
 Route::resource('produk', ProdukController:: class);
 Route::resource('user', UserController:: class);
 });
 
-Route::get('login',[AuthController:: class,'showLogin']);
+Route::get('login',[AuthController:: class,'showLogin'])->name('login');
 Route::post('login',[AuthController:: class,'loginProcess']);
 Route::get('logout',[AuthController:: class,'logout']);
 

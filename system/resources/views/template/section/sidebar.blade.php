@@ -41,7 +41,7 @@
               </div>
             </div>
               <li class="nav-item">
-                <a href="{{url('produk')}}" class="nav-link">
+                <a href="{{url('admin/produk')}}" class="nav-link">
                  <i class="nav-icon fas fa-th" aria-hidden="true"></i>
                   <p>Produk</p>
                 </a>
@@ -57,7 +57,7 @@
               </div>
             </div>
               <li class="nav-item">
-                <a href="{{url('user')}}" class="nav-link">
+                <a href="{{url('admin/user')}}" class="nav-link">
                   <i class="nav-icon fas fa-user"></i>
                   <p>User</p>
                 </a>

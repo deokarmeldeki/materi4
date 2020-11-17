@@ -27,9 +27,9 @@
 									<td>{{$loop->iteration}}</td>
 									<td>
 										<div class="btn-group">
-											<a href="{{url('produk', $produk->id)}}" class="btn btn-dark ml-1" width="20px"><i class="fa fa-info"></i></a>
-											<a href="{{url('produk', $produk->id)}}/edit" class="btn btn-warning ml-1"><i class="fa fa-edit"width="20px"></i></a>
-											@include ('template.untils.delete', ['url' => url('produk', $produk->id)])
+											<a href="{{url('admin/produk', $produk->id)}}" class="btn btn-dark ml-1" width="20px"><i class="fa fa-info"></i></a>
+											<a href="{{url('admin/produk', $produk->id)}}/edit" class="btn btn-warning ml-1"><i class="fa fa-edit"width="20px"></i></a>
+											@include ('template.untils.delete', ['url' => url('admin/produk', $produk->id)])
 										</div>
 									</td>
 									<td>{{$produk->nama}}</td>
